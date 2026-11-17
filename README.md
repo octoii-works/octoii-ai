@@ -19,8 +19,14 @@ cargo test --locked --workspace
 ```
 
 The live-model test is ignored by default and requires explicit configuration and invocation.
-The library is consumed from Octoii at a pinned Git submodule commit. This repository is not yet
-published to crates.io. Existing source is provided under the included MIT license.
+Use the public Cargo package:
+
+```toml
+[dependencies]
+octoii-ai = "0.0.2"
+```
+
+Rust imports use `octoii_ai`. Source is provided under the included MIT license.
 
 Initial extraction: octoii-works/octoii commit 057faa3, libs/octoii-ai. Source files and tests were
 copied unchanged; only standalone workspace/build configuration and repository documentation were added.

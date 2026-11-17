@@ -1,7 +1,9 @@
 [package]
 name = "octoii-ai"
 description = "Octoii's access to models: one vocabulary of conversations in and out, the catalogue of models, and each provider's driver"
-version = "0.0.1"
+version = "0.0.2"
+repository = "https://github.com/octoii-works/octoii-ai"
+readme = "README.md"
 edition.workspace = true
 rust-version.workspace = true
 license.workspace = true
@@ -42,7 +44,7 @@ resolver = "3"
 edition = "2024"
 rust-version = "1.100"
 license = "MIT"
-publish = false
+publish = ["crates-io"]
 
 [workspace.lints.rust]
 unsafe_op_in_unsafe_fn = "deny"
